@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devnovate Track</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        button {
+            background: #ff9800;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚀 Welcome to Devnovate Track</h1>
+        <p>Where innovation meets seamless event management!</p>
+    </header>
+    
+    <section id="event-setup">
+        <h2>📅 Easy Event Setup</h2>
+        <p>Quickly create hackathons with a customizable landing page.</p>
+        <a href="https://forms.gle/Dcf7BmD2Bt1i2yFa8" target="_blank">
+            <button>Create Event</button>
+        </a>    
+    </section>
+
+   
+    <section id="registration">
+        <h2>🛠 One-Click Registrations</h2>
+        <p>Sign up hassle-free with social authentication.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUat44rXYPQUHvA2pVqhOGRXeoXrL4iEi1W3vjVpE3CNSWYQ/viewform?usp=sharing"><button>Register with Google</button></a>
+        <button>Register with GitHub</button>
+    </section>
+    
+    <section id="team-formation">
+        <h2>🤝 Smart Team Formation</h2>
+        <p>Join or form teams easily based on your skills.</p>
+        <button>Find a Team</button>
+    </section>
+    
+    <section id="project-submission">
+        <h2>🏆 Project Submissions & Judging</h2>
+        <p>Submit GitHub repos, demo links & participate in multi-stage judging.</p>
+        
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUat44rXYPQUHvA2pVqhOGRXeoXrL4iEi1W3vjVpE3CNSWYQ/viewform?usp=header">
+                <button>Submit Project</button></a>
+    </section>
+    
+    <section id="resume-based">
+        <h2>📄 Resume-Based Registrations</h2>
+        <p>Companies can shortlist participants based on resumes.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe007laals0vLLVnULmTOkSVOiwyYEbwFE0x9eSvePdHfFMSg/viewform?usp=dialog"><button>Upload Resume</button></a>S
+    </section>
+    
+    <section id="recruitment">
+        <h2>💼 Recruitment & Hiring</h2>
+        <p>Integrated talent scouting and job postings.</p>
+        <button>Explore Opportunities</button>
+    </section>
+</body>
+</html>
+<script>
+    document.getElementById("createEvent").addEventListener("click", function() {
+        fetch("https://hook.eu2.make.com/woa5ed4linoaxd7mnl8uf9r47oycznni", { method: "POST" })
+        .then(response => console.log("Webhook Triggered!"))
+        .catch(error => console.error("Error:", error));
+    });
+    </script>
